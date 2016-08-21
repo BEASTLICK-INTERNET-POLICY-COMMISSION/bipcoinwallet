@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>592</width>
-    <height>240</height>
+    <height>340</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,7 +25,7 @@
   <property name="maximumSize">
    <size>
     <width>592</width>
-    <height>240</height>
+    <height>340</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -41,7 +41,7 @@
       </sizepolicy>
      </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CryptoNote coin version %1&lt;/p&gt;&lt;p&gt;CryptoNote coin is the next generation anonymous cryptocurrency based on CryptoNote.&lt;/p&gt;&lt;p&gt;Copyright (c) 2012-2015. CryptoNote Developers&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cryptonote.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://cryptonote.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;BipCoin version %1&lt;/p&gt;&lt;p&gt;BipCoin is the first cryptocurrency covered by The BipCot NoGov license v1.11.&lt;/p&gt;&lt;p&gt;This allows use and re-use by anyone except governments and government agents.  Unlike the GPL and other copyright-based licenses, the BipCot NoGov license uses no government guns on violators, only shame.  BipCoin is built with love by the Beastlick Internet Policy Commission Outreach Team.&lt;/p&gt;&lt;p&gt;BipCoin is based on CryptoNote code, which solves the main three problems of Bitcoin.&lt;/p&gt;&lt;p&gt;BipCoin - &lt;a href=&quot;http://bipcot.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://bipcoin.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;BipCot - &lt;a href=&quot;http://bipcot.org&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://bipcot.org&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;CryptoNote - &lt;a href=&quot;https://cryptonote.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://cryptonote.org/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
