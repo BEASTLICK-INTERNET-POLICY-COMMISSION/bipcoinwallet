@@ -1,33 +1,31 @@
 **1. Clone wallet sources**
 
 ```
-git clone https://github.com/cryptonotefoundation/cryptonotewallet.git
+git clone https://github.com/BEASTLICK-INTERNET-POLICY-COMMISSION/bipcoinwallet.git
 ```
 
-**2. Modify `CryptoNoteWallet.cmake`**
- 
-```
-set(CN_PROJECT_NAME "furiouscoin")
-set(CN_CURRENCY_DISPLAY_NAME "FuriousCoin")
-set(CN_CURRENCY_TICKER "XFC")
-```
 
-**3. Set symbolic link to coin sources at the same level as `src`. For example:**
+**2. Create git submoduleat the same level as `src`. For example:**
 
 ```
-ln -s ../cryptonote cryptonote
+git submodule add https://github.com/BEASTLICK-INTERNET-POLICY-COMMISSION/bipcoin.git cryptonote
 ```
 
-Alternative way is to create git submodule:
-
-```
-git submodule add https://github.com/cryptonotefoundation/cryptonote.git cryptonote
-```
-
-Replace URL with git remote repository of your coin.
-
-**4. Build**
+**4 (Linux). Build**
 
 ```
 mkdir build && cd build && cmake .. && make
 ```
+
+**4 (Windows). Build**
+
+Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, Boost 1.55, Qt 5.7. You may download them from:
+http://www.microsoft.com/
+http://www.cmake.org/
+http://www.boost.org/
+https://www.qt.io/
+
+```
+cmake -G "Visual Studio 12" -DCMAKE_PREFIX_PATH=C:\Qt\5.7\msvc2013
+```
+This will create a bipcoin.sln file which you can open in Visual Studio and build.
