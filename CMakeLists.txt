@@ -34,7 +34,7 @@ endif ()
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
-set(VERSION "0.0.0.1")
+set(VERSION "0.0.0.2")
 configure_file("cryptonote/src/version.h.in" "version.h")
 configure_file("src/CryptoNoteWalletConfig.h.in" "CryptoNoteWalletConfig.h")
 
@@ -188,7 +188,7 @@ if (WIN32)
 
   set(PLATFORM_DIR Windows)
   set(BUILD_PLATFORM WIN32)
-  set(BUILD_RESOURCES src/cryptonotewallet.rc)
+  set(BUILD_RESOURCES src/bipcoin.rc)
   set(QTMAIN Qt5::WinMain)
 
 elseif (UNIX)
