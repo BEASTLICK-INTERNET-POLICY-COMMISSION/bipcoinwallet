@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
+cmake_policy(SET CMP0020 NEW)
+
 include(CryptoNoteWallet.cmake)
 
 project(${CN_PROJECT_NAME})
@@ -20,11 +22,11 @@ find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 
 set(Boost_USE_STATIC_LIBS ON)
-if(WIN32)
-  set(Boost_USE_STATIC_RUNTIME OFF)
-else(WIN32)
-  set(Boost_USE_STATIC_RUNTIME ON)
-endif(WIN32)
+# if(WIN32)
+#   set(Boost_USE_STATIC_RUNTIME OFF)
+# else(WIN32)
+#   set(Boost_USE_STATIC_RUNTIME ON)
+# endif(WIN32)
 
 find_package(Boost 1.55 REQUIRED COMPONENTS date_time filesystem program_options regex serialization system thread chrono)
 if ((${Boost_MAJOR_VERSION} EQUAL 1) AND (${Boost_MINOR_VERSION} EQUAL 54))
@@ -130,6 +132,7 @@ set(CRYPTONOTE_SOURCES
   cryptonote/src/Wallet/LegacyKeysImporter.cpp
   cryptonote/src/Wallet/WalletAsyncContextCounter.cpp
   cryptonote/src/Wallet/WalletErrors.cpp
+  cryptonote/src/Wallet/WalletUtils.cpp
   cryptonote/src/WalletLegacy/KeysStorage.cpp
   cryptonote/src/WalletLegacy/WalletLegacy.cpp
   cryptonote/src/WalletLegacy/WalletHelper.cpp
