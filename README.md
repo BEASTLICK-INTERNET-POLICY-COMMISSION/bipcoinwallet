@@ -9,6 +9,7 @@ git clone https://github.com/BEASTLICK-INTERNET-POLICY-COMMISSION/bipcoinwallet.
 
 ```
 git submodule add https://github.com/BEASTLICK-INTERNET-POLICY-COMMISSION/bipcoin.git cryptonote
+git submodule update --init -- "cryptonote"
 ```
 
 **4 (Linux). Build**
