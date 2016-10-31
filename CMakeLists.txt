@@ -36,7 +36,7 @@ endif ()
 include_directories(${Boost_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
-set(VERSION "0.0.0.2")
+set(VERSION "0.0.0.4")
 configure_file("cryptonote/src/version.h.in" "version.h")
 configure_file("src/CryptoNoteWalletConfig.h.in" "CryptoNoteWalletConfig.h")
 
